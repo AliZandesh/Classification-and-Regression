@@ -1,0 +1,69 @@
+Supervised machine learning algorithms can be split into two groups based on the type of target variable that they can predict:
+
+1- Classification is a prediction task with a categorical target variable. 
+Classification models learn how to classify any new observation. 
+This assigned class can be either right or wrong, not in between. 
+A classic example of classification is the iris dataset, in which you use physical measurements of plants to predict their species. 
+A famous algorithm that can be used for classification is logistic regression.
+
+2- Regression is a prediction task in which the target variable is numeric. 
+A famous example of regression is the Housing Prices Challenge on Kaggle. 
+In this machine learning contest, participants try to predict the sales prices of houses based on numerous independent variables.
+
+*************************************
+
+The main differences between classification and regression in machine learning are:
+1- Prediction Output: In classification, the goal is to predict discrete class labels, while in regression, the goal is to predict continuous values
+
+. For example, classifying emails as spam or not spam is a classification problem, while predicting the price of a house is a regression problem.
+
+2- Target Variable: In classification, the target variable is categorical, while in regression, the target variable is continuous
+. Categorical variables have a limited number of possible values, while continuous variables can take any value within a range.
+
+3- Algorithms: Classification and regression often use different algorithms. 
+Some algorithms, such as decision trees, can be used for both tasks, but their implementation may vary depending on the problem
+
+For example, a decision tree for classification may use Gini impurity, while a decision tree for regression may use mean squared error.
+
+**************************************************
+Evaluation Metrics: The evaluation metrics used for classification and regression are 4- different. 
+In classification, common metrics include accuracy, precision, recall, and F1 score,
+In regression, common metrics include mean squared error, mean absolute error, and R-squared
+**************************************************
+5- Interpretation: The interpretation of results in classification and regression can be different. 
+In classification, we can interpret the model's predictions as probabilities or confidence scores for each class label, 
+In regression, we interpret the model's predictions as the estimated value of the target variable
+
+**************************************************
+Here's an example to illustrate the differences between classification and regression:
+
+Classification: Email Spam Detection
+Input: Email features (e.g., sender, subject, body)
+Output: Class label (Spam or Not Spam)
+Algorithm: Random Forest Classifier
+
+Regression: House Price Prediction
+Input: House features (e.g., size, number of bedrooms, location)
+Output: Continuous value (Price)
+Algorithm: Random Forest Regressor
+
+****************************************************
+In the classification example, we use a Random Forest Classifier to predict whether an email is spam or not based on its features. 
+In the regression example, we use a Random Forest Regressor to predict the price of a house based on its features. 
+The main difference is the type of output we are predicting: discrete class labels for classification and continuous values for regression
+
+****************************************************
+
+For a single prediction, classifications are either right or wrong, while regressions have an error on a continuous scale. 
+Having a numeric error measure is more practical, so many classification models predict not only the class but also the probability of being in either of the classes.
+
+Some models can only do regression, some can only do classification, and some can do both. 
+The kNN algorithm seamlessly (=smoothly) adapts to both classification and regression.
+
+**************************************************
+it's not ideal for a model to predict the actual values in a regression problem (as opposed to a classification problem that has discrete levels of value).
+
+
+*************************************************
+Logestic Regression
+https://twitter.com/Sumanth_077/status/1713565693776666833
